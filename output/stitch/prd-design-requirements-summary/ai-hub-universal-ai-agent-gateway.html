@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="web_standard" name="shell-type"/>
+<title>AI Hub — Editorial Showcase &amp; Model Matrix Magazine</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "error-container": "#93000a",
+            "on-secondary": "#323120",
+            "primary-fixed-dim": "#0fe549",
+            "surface-bright": "#383a38",
+            "outline-variant": "#3c4b39",
+            "outline": "#859580",
+            "taxonomy-code-ui": "#00bae2",
+            "surface-dim": "#121413",
+            "tertiary": "#a3f67c",
+            "surface-tint": "#0fe549",
+            "on-tertiary": "#0f3900",
+            "inverse-on-surface": "#2f3130",
+            "on-surface-variant": "#bacbb4",
+            "taxonomy-multimodal-scroll": "#fec5fb",
+            "secondary-fixed-dim": "#cac8ae",
+            "on-secondary-container": "#bbb9a1",
+            "on-primary-container": "#006018",
+            "primary-fixed": "#70ff78",
+            "primary": "#65ff71",
+            "on-tertiary-container": "#1e5e00",
+            "taxonomy-text-llm": "#9d95ff",
+            "tertiary-fixed": "#a4f87e",
+            "error": "#ffb4ab",
+            "on-tertiary-fixed": "#062100",
+            "surface-container": "#1e201f",
+            "inverse-primary": "#006e1d",
+            "surface-container-highest": "#333534",
+            "on-secondary-fixed-variant": "#484835",
+            "on-error-container": "#ffdad6",
+            "surface-container-low": "#1a1c1b",
+            "hairline": "#42433d",
+            "on-surface": "#e2e3e0",
+            "on-primary-fixed": "#002204",
+            "secondary-fixed": "#e6e4c9",
+            "surface": "#121413",
+            "muted-text": "#7c7c6f",
+            "cream-text": "#fffce1",
+            "decorative-lipstick-pink": "#f100cb",
+            "surface-container-lowest": "#0d0f0e",
+            "surface-container-high": "#282a29",
+            "background": "#121413",
+            "on-background": "#e2e3e0",
+            "tertiary-container": "#88d963",
+            "inverse-surface": "#e2e3e0",
+            "surface-variant": "#333534",
+            "primary-container": "#0ae448",
+            "decorative-core-wash": "#dfffd1",
+            "tertiary-fixed-dim": "#89db65",
+            "taxonomy-agent-svg": "#ff8709",
+            "secondary": "#cac8ae",
+            "on-tertiary-fixed-variant": "#195200",
+            "on-primary": "#00390b",
+            "on-secondary-fixed": "#1c1c0c",
+            "secondary-container": "#4b4a37",
+            "surface-panel": "#191919",
+            "on-primary-fixed-variant": "#005314",
+            "on-error": "#690005",
+            "surface-canvas": "#0e100f"
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "0.75rem",
+            full: "9999px"
+          },
+          spacing: {
+            "space-sm": "0.75rem",
+            "margin-mobile": "1.25rem",
+            "space-xl": "2rem",
+            "space-xs": "0.5rem",
+            "space-md": "1rem",
+            "gutter-mobile": "1rem",
+            "gutter": "1.5rem",
+            "margin": "3rem",
+            "space-lg": "1.5rem"
+          },
+          fontFamily: {
+            "body-lead": ["DM Sans"],
+            "section-eyebrow": ["DM Sans"],
+            "headline-lg": ["DM Sans"],
+            "display-mobile": ["DM Sans"],
+            "headline-xl": ["DM Sans"],
+            "headline-xl-mobile": ["DM Sans"],
+            "button-text": ["DM Sans"],
+            "caption": ["DM Sans"],
+            "headline-lg-mobile": ["DM Sans"],
+            "headline-sm": ["DM Sans"],
+            "display": ["DM Sans"],
+            "body-md": ["DM Sans"],
+            "body-sm": ["DM Sans"],
+            "headline-md": ["DM Sans"]
+          },
+          fontSize: {
+            "body-lead": ["23px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "400" }],
+            "section-eyebrow": ["16px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }],
+            "headline-lg": ["66px", { lineHeight: "79px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "display-mobile": ["72px", { lineHeight: "72px", letterSpacing: "-0.02em", fontWeight: "600" }],
+            "headline-xl": ["101px", { lineHeight: "101px", letterSpacing: "-0.015em", fontWeight: "600" }],
+            "headline-xl-mobile": ["48px", { lineHeight: "52px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "button-text": ["18px", { lineHeight: "20px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "caption": ["14px", { lineHeight: "20px", letterSpacing: "-0.01em", fontWeight: "400" }],
+            "headline-lg-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "headline-sm": ["34px", { lineHeight: "41px", letterSpacing: "-0.01em", fontWeight: "600" }],
+            "display": ["224px", { lineHeight: "202px", letterSpacing: "-0.02em", fontWeight: "600" }],
+            "body-md": ["19px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }],
+            "body-sm": ["16px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }],
+            "headline-md": ["44px", { lineHeight: "53px", letterSpacing: "-0.01em", fontWeight: "600" }]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface-canvas font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TOP HEADER / NAV -->
+<header class="fixed top-0 w-full z-50 bg-surface-canvas/90 backdrop-blur-md">
+<aside class="w-full bg-surface-panel px-margin-mobile md:px-margin py-2 text-center text-caption font-caption text-cream-text border-b border-hairline/40">
+<span class="text-muted-text">Unified AI Gateway v2.4 Editorial Edition — Zero latency markup across 240+ frontier models</span>
+<a class="ml-space-xs text-primary-container font-headline-sm text-caption font-semibold hover:underline inline-flex items-center gap-1" href="#model-matrix">Inspect Matrix →</a>
+</aside>
+<div class="h-20 w-full max-w-[1360px] mx-auto px-margin-mobile md:px-gutter flex items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-md">
+<img alt="AI Hub Emblem Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U_CSn6lroTflcyoH1-a0xUbtM6yOKoXsg4XBvxzyteG1L1qP_0eNjadsru2TZrZWc1-sNZXUU7keHWCqVcb9HSAW_TWUxDvjRmiBggl-j4dtJGYd57T1In6XF5t8SgfOOHzK_EjToxzw0vI5PCtwjBMlc9aJjO2pExKqaXa1_SmXuvV2LMYkcNbzmleufarex69U9g4AwMoKdlSOyDEDNwTrNAFCGWS0lAYQEixN-gLQ"/>
+<span class="font-headline-sm text-[20px] font-semibold tracking-tight text-cream-text">AI Hub</span>
+<span class="hidden sm:inline-block px-2 py-0.5 rounded text-[11px] font-mono border border-hairline text-muted-text">VOL. 02</span>
+</div>
+<nav class="hidden xl:flex items-center gap-space-lg">
+<a aria-current="page" class="transition-colors py-1 text-cream-text font-semibold border-b border-cream-text" href="#chapters">Chapters</a>
+<a class="font-body-sm text-body-sm text-muted-text hover:text-cream-text transition-colors py-1" href="#model-matrix">Model Matrix</a>
+<a class="font-body-sm text-body-sm text-muted-text hover:text-cream-text transition-colors py-1" href="#agent-workflows">Workflows</a>
+<a class="font-body-sm text-body-sm text-muted-text hover:text-cream-text transition-colors py-1" href="#telemetry">Telemetry</a>
+<a class="font-body-sm text-body-sm text-muted-text hover:text-cream-text transition-colors py-1" href="#at-cost-pricing">Pricing</a>
+<a class="font-body-sm text-body-sm text-muted-text hover:text-cream-text transition-colors py-1" href="#faq">FAQ</a>
+</nav>
+<div class="flex items-center gap-space-sm">
+<a class="hidden sm:inline-flex items-center justify-center h-[46px] px-space-md rounded-full border border-cream-text/70 bg-transparent text-cream-text font-button-text text-[15px] hover:border-cream-text hover:bg-cream-text/5 transition-all" href="#playground">
+          Spec Reader
+        </a>
+<a class="relative inline-flex items-center justify-center h-[46px] px-space-lg rounded-full text-cream-text font-button-text text-[15px] group transition-opacity hover:opacity-90" href="#get-started">
+<span class="absolute inset-0 rounded-full p-[1.5px] bg-gradient-to-r from-primary-container via-taxonomy-code-ui to-taxonomy-multimodal-scroll">
+<span class="flex h-full w-full rounded-full bg-surface-canvas items-center justify-center"></span>
+</span>
+<span class="relative z-10 text-cream-text font-button-text">Get Universal Key</span>
+</a>
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-[18px]">menu_book</span>
+</div>
+</div>
+</div>
+</header>
+<main class="w-full pt-28 bg-surface-canvas min-h-screen">
+<div class="flex flex-col w-full text-on-surface">
+<!-- HERO SECTION: ULTRA-EDITORIAL WITH INTEGRATED 3D ORGANIC GLOW BLOBS -->
+<section class="relative w-full overflow-hidden border-b border-hairline py-20 lg:py-32 px-margin-mobile md:px-margin">
+<!-- Integrated Ambient 3D Blob Gradients in Brand Discipline Colors (Pink, Blue, Green) -->
+<div class="pointer-events-none absolute -top-24 left-1/4 -translate-x-1/2 w-[520px] h-[520px] rounded-full opacity-35 blur-[130px] bg-gradient-to-br from-taxonomy-multimodal-scroll via-decorative-lipstick-pink to-transparent"></div>
+<div class="pointer-events-none absolute top-10 right-1/4 translate-x-1/4 w-[560px] h-[560px] rounded-full opacity-30 blur-[140px] bg-gradient-to-bl from-taxonomy-code-ui via-taxonomy-text-llm to-transparent"></div>
+<div class="pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] rounded-full opacity-30 blur-[130px] bg-gradient-to-t from-primary-container via-tertiary-fixed to-transparent"></div>
+<div class="relative max-w-[1360px] mx-auto flex flex-col items-center text-center">
+<!-- Editorial Folio Eyebrow -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-hairline bg-surface-panel/80 mb-space-md">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-section-eyebrow text-[13px] text-cream-text/90 tracking-widest uppercase font-mono">Issue № 02 • Machine Intelligence Architecture</span>
+</div>
+<!-- Ultra-Editorial Display Headline -->
+<h1 class="font-headline-xl text-[44px] sm:text-[64px] lg:text-[104px] text-cream-text max-w-6xl tracking-tight leading-[0.98] text-balance font-semibold">
+            The Definitive Gateway to Machine Intelligence
+          </h1>
+<!-- Editorial Subtitle with Typography Hierarchy -->
+<p class="font-body-lead text-body-lead text-muted-text max-w-3xl mt-space-lg text-balance leading-relaxed">
+            Consolidate 240+ frontier large language models, vision engines, and autonomous reasoning agents through one cryptographically signed endpoint. Pure at-cost token routing with mathematical latency transparency.
+          </p>
+<!-- Action Capsule Ghost Buttons -->
+<div class="flex flex-wrap items-center justify-center gap-space-md mt-space-xl">
+<a class="relative inline-flex items-center justify-center h-[52px] px-space-xl rounded-full text-cream-text font-button-text group transition-all duration-300 hover:opacity-95" href="#get-started">
+<span class="absolute inset-0 rounded-full p-[1.5px] bg-gradient-to-r from-primary-container via-taxonomy-code-ui to-taxonomy-multimodal-scroll">
+<span class="flex h-full w-full rounded-full bg-surface-canvas items-center justify-center"></span>
+</span>
+<span class="relative z-10 flex items-center gap-2 text-cream-text font-button-text">
+<span>Issue Free Gateway Key</span>
+<span class="material-symbols-outlined text-[19px] text-primary">north_east</span>
+</span>
+</a>
+<a class="inline-flex items-center justify-center h-[52px] px-space-xl rounded-full border border-cream-text bg-transparent text-cream-text font-button-text hover:bg-cream-text/10 transition-all" href="#model-matrix">
+              Browse Model Catalog
+            </a>
+<a class="inline-flex items-center gap-2 h-[52px] px-space-md text-muted-text hover:text-cream-text font-button-text transition-colors" href="#chapters">
+<span class="material-symbols-outlined text-[18px]">auto_stories</span>
+<span>Read Architecture Essays</span>
+</a>
+</div>
+<!-- 3-COLUMN STATS & QUICK-START BAR -->
+<div class="w-full max-w-5xl mt-20 pt-8 border-t border-hairline/70">
+<div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-hairline bg-surface-panel/60 rounded-xl border border-hairline">
+<div class="p-6 flex flex-col items-center md:items-start text-center md:text-left">
+<span class="text-caption font-caption text-taxonomy-code-ui font-mono uppercase tracking-wider">Catalogue Depth</span>
+<span class="font-headline-lg text-[48px] text-cream-text font-semibold tracking-tight mt-1">240+</span>
+<p class="text-body-sm font-caption text-muted-text mt-1">Frontier foundation models &amp; fine-tunes benchmarked live.</p>
+</div>
+<div class="p-6 flex flex-col items-center md:items-start text-center md:text-left">
+<span class="text-caption font-caption text-primary-container font-mono uppercase tracking-wider">Pricing Philosophy</span>
+<span class="font-headline-lg text-[48px] text-cream-text font-semibold tracking-tight mt-1">$0</span>
+<p class="text-body-sm font-caption text-muted-text mt-1">Gateway surcharge on tokens. Direct at-cost provider invoicing.</p>
+</div>
+<div class="p-6 flex flex-col items-center md:items-start text-center md:text-left">
+<span class="text-caption font-caption text-taxonomy-multimodal-scroll font-mono uppercase tracking-wider">Unified Credential</span>
+<span class="font-headline-lg text-[48px] text-cream-text font-semibold tracking-tight mt-1">1 Key</span>
+<p class="text-body-sm font-caption text-muted-text mt-1">Drop-in replacement for OpenAI SDK with deterministic failover.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FEATURES SECTION: MAGAZINE-STYLE NUMBERED CHAPTER STORIES WITH VECTOR ROUTING DIAGRAMS -->
+<section class="w-full py-24 px-margin-mobile md:px-margin border-b border-hairline bg-surface-canvas" id="chapters">
+<div class="max-w-[1360px] mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6 border-b border-hairline pb-8">
+<div>
+<div class="font-section-eyebrow text-section-eyebrow text-muted-text mb-space-xs font-mono">
+                { Magazine Serial — Infrastructure Monograph }
+              </div>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-cream-text tracking-tight font-semibold">
+                Anatomy of the Neural Switchboard
+              </h2>
+</div>
+<p class="font-body-md text-body-md text-muted-text max-w-md">
+              A deep-dive editorial into how our low-overhead edge mesh resolves, caches, and routes token traffic in under 8 milliseconds.
+            </p>
+</div>
+<div class="space-y-24">
+<!-- Chapter 01: Architectural Superiority -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<div class="lg:col-span-5 flex flex-col">
+<span class="text-caption font-mono text-primary uppercase tracking-widest mb-3">{ 01 / Architectural Superiority }</span>
+<h3 class="font-headline-md text-[36px] lg:text-[42px] text-cream-text font-semibold leading-tight mb-4">
+                  Deterministic Multi-Region Packet Routing
+                </h3>
+<p class="font-body-md text-muted-text leading-relaxed mb-6">
+                  Traditional proxies introduce cascading TLS handshakes and opaque buffering delays. AI Hub deploys Rust-native edge daemons co-located with OpenAI, Anthropic, and Google Cloud availability zones.
+                </p>
+<ul class="space-y-3 font-body-sm text-cream-text/90 border-t border-hairline pt-5">
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span>Sub-8ms protocol translation to unified SSE chunk format</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span>Zero-disk prompt transit with zero retention guarantees</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span>Autonomous bypass routing around tier-1 upstream outages</span>
+</li>
+</ul>
+</div>
+<!-- Vector Routing Diagram Mockup -->
+<div class="lg:col-span-7 bg-surface-panel rounded-xl border border-hairline p-6 lg:p-8">
+<div class="flex items-center justify-between pb-4 border-b border-hairline text-caption font-mono text-muted-text">
+<span class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+                    EDGE ROUTING TOPOLOGY
+                  </span>
+<span>JITTER &lt; 0.4ms</span>
+</div>
+<!-- Interactive Routing SVG Diagram -->
+<div class="py-8">
+<svg class="w-full h-48" fill="none" viewbox="0 0 700 180">
+<!-- Nodes -->
+<circle cx="60" cy="90" fill="#191919" r="28" stroke="#fffce1" stroke-width="1.5"></circle>
+<text fill="#fffce1" font-family="DM Sans" font-size="11" font-weight="600" text-anchor="middle" x="60" y="94">CLIENT</text>
+<circle cx="280" cy="90" fill="#191919" r="34" stroke="#0ae448" stroke-width="2"></circle>
+<text fill="#0ae448" font-family="DM Sans" font-size="11" font-weight="600" text-anchor="middle" x="280" y="87">AI HUB</text>
+<text fill="#7c7c6f" font-family="DM Sans" font-size="9" text-anchor="middle" x="280" y="103">GATEWAY</text>
+<!-- Target Nodes -->
+<rect fill="#1e201f" height="36" rx="6" stroke="#9d95ff" stroke-width="1.2" width="140" x="520" y="20"></rect>
+<text fill="#fffce1" font-family="DM Sans" font-size="11" text-anchor="middle" x="590" y="42">Anthropic (Claude)</text>
+<rect fill="#1e201f" height="36" rx="6" stroke="#00bae2" stroke-width="1.2" width="140" x="520" y="72"></rect>
+<text fill="#fffce1" font-family="DM Sans" font-size="11" text-anchor="middle" x="590" y="94">OpenAI (GPT-4o)</text>
+<rect fill="#1e201f" height="36" rx="6" stroke="#a3f67c" stroke-width="1.2" width="140" x="520" y="124"></rect>
+<text fill="#fffce1" font-family="DM Sans" font-size="11" text-anchor="middle" x="590" y="146">Google (Gemini)</text>
+<!-- Connecting Lines with Dash Flow -->
+<path d="M88 90 L246 90" stroke="#fffce1" stroke-dasharray="4 4" stroke-width="1.5"></path>
+<path d="M314 80 L520 38" stroke="#9d95ff" stroke-width="1.5"></path>
+<path d="M314 90 L520 90" stroke="#00bae2" stroke-width="1.5"></path>
+<path d="M314 100 L520 142" stroke="#a3f67c" stroke-dasharray="2 3" stroke-width="1.5"></path>
+<!-- Fallback Loop Indicator -->
+<path d="M660 38 C685 38 685 90 660 90" stroke="#ff8709" stroke-dasharray="3 3" stroke-width="1.2"></path>
+<text fill="#ff8709" font-family="DM Sans" font-size="9" text-anchor="start" x="686" y="68">Failover</text>
+</svg>
+</div>
+<div class="flex items-center justify-between text-caption font-caption text-muted-text border-t border-hairline pt-3 font-mono">
+<span>Policy: Latency-Weighted Hedged Requests</span>
+<span class="text-primary-container">Active Failover Node: Oregon-US-West</span>
+</div>
+</div>
+</div>
+<!-- Chapter 02: Telemetry & Benchmarks -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<!-- Diagram on Left for Magazine Rhythm -->
+<div class="lg:col-span-7 order-2 lg:order-1 bg-surface-panel rounded-xl border border-hairline p-6 lg:p-8">
+<div class="flex items-center justify-between pb-4 border-b border-hairline text-caption font-mono text-muted-text">
+<span class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-taxonomy-code-ui animate-pulse"></span>
+                    BENCHMARK TELEMETRY CONSOLE
+                  </span>
+<span>SAMPLING: 50,000 RUNS/HR</span>
+</div>
+<div class="py-6 space-y-4">
+<!-- Benchmark Bar 1 -->
+<div>
+<div class="flex justify-between text-caption font-mono mb-1">
+<span class="text-cream-text">Claude 3.5 Sonnet (TTFT)</span>
+<span class="text-taxonomy-text-llm">162ms p50 • 248ms p95</span>
+</div>
+<div class="w-full h-3 bg-surface-canvas rounded-full overflow-hidden p-0.5 border border-hairline">
+<div class="h-full bg-taxonomy-text-llm rounded-full" style="width: 78%"></div>
+</div>
+</div>
+<!-- Benchmark Bar 2 -->
+<div>
+<div class="flex justify-between text-caption font-mono mb-1">
+<span class="text-cream-text">GPT-4o Omnimodal (TTFT)</span>
+<span class="text-taxonomy-multimodal-scroll">184ms p50 • 290ms p95</span>
+</div>
+<div class="w-full h-3 bg-surface-canvas rounded-full overflow-hidden p-0.5 border border-hairline">
+<div class="h-full bg-taxonomy-multimodal-scroll rounded-full" style="width: 72%"></div>
+</div>
+</div>
+<!-- Benchmark Bar 3 -->
+<div>
+<div class="flex justify-between text-caption font-mono mb-1">
+<span class="text-cream-text">Gemini 1.5 Flash (TTFT)</span>
+<span class="text-taxonomy-code-ui">98ms p50 • 140ms p95</span>
+</div>
+<div class="w-full h-3 bg-surface-canvas rounded-full overflow-hidden p-0.5 border border-hairline">
+<div class="h-full bg-taxonomy-code-ui rounded-full" style="width: 94%"></div>
+</div>
+</div>
+<!-- Benchmark Bar 4 -->
+<div>
+<div class="flex justify-between text-caption font-mono mb-1">
+<span class="text-cream-text">Semantic Cache Re-hit</span>
+<span class="text-primary-container">4ms p50 • 8ms p95</span>
+</div>
+<div class="w-full h-3 bg-surface-canvas rounded-full overflow-hidden p-0.5 border border-hairline">
+<div class="h-full bg-primary-container rounded-full" style="width: 99%"></div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-caption font-caption text-muted-text border-t border-hairline pt-3 font-mono">
+<span>Standardized MMLU-Pro &amp; HumanEval</span>
+<span class="text-cream-text">Updated 4 mins ago</span>
+</div>
+</div>
+<div class="lg:col-span-5 order-1 lg:order-2 flex flex-col">
+<span class="text-caption font-mono text-taxonomy-code-ui uppercase tracking-widest mb-3">{ 02 / Telemetry &amp; Benchmarks }</span>
+<h3 class="font-headline-md text-[36px] lg:text-[42px] text-cream-text font-semibold leading-tight mb-4">
+                  Unbiased Observability Without Vendor Fog
+                </h3>
+<p class="font-body-md text-muted-text leading-relaxed mb-6">
+                  Provider status pages frequently conceal silent queueing delays and token-bucket throttling. Our distributed synthetic canary network continuously benchmarks real payload latency across Tokyo, Frankfurt, and Virginia.
+                </p>
+<div class="p-4 rounded-lg bg-surface-panel border border-hairline font-mono text-caption text-cream-text/90">
+<div class="text-muted-text">// Evaluator assertion</div>
+<div>curl -H "X-AIHUB-AUDIT: true" https://api.aihub.io/v1/benchmarks</div>
+</div>
+</div>
+</div>
+<!-- Chapter 03: Frictionless Integration -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<div class="lg:col-span-5 flex flex-col">
+<span class="text-caption font-mono text-taxonomy-multimodal-scroll uppercase tracking-widest mb-3">{ 03 / Frictionless Integration }</span>
+<h3 class="font-headline-md text-[36px] lg:text-[42px] text-cream-text font-semibold leading-tight mb-4">
+                  Zero Client-Side Refactoring
+                </h3>
+<p class="font-body-md text-muted-text leading-relaxed mb-6">
+                  Maintain complete code compatibility. You do not need to install another heavy vendor abstraction or proprietary orchestrator. Swap your baseURL and plug your existing OpenAI-compatible SDK directly into production.
+                </p>
+<div class="flex items-center gap-4 text-caption font-mono text-muted-text">
+<span class="px-2.5 py-1 rounded bg-surface-panel border border-hairline text-cream-text">Python</span>
+<span class="px-2.5 py-1 rounded bg-surface-panel border border-hairline text-cream-text">TypeScript</span>
+<span class="px-2.5 py-1 rounded bg-surface-panel border border-hairline text-cream-text">Go</span>
+<span class="px-2.5 py-1 rounded bg-surface-panel border border-hairline text-cream-text">Rust</span>
+</div>
+</div>
+<div class="lg:col-span-7 bg-surface-panel rounded-xl border border-hairline p-6 lg:p-8">
+<div class="flex items-center justify-between pb-4 border-b border-hairline text-caption font-mono text-cream-text">
+<span>main.py — OpenAI SDK Plug &amp; Play</span>
+<span class="text-primary-container font-mono text-[12px]">Zero Changes Needed</span>
+</div>
+<pre class="font-mono text-[13px] text-cream-text/90 leading-relaxed overflow-x-auto py-4"><code><span class="text-taxonomy-text-llm">from</span> openai <span class="text-taxonomy-text-llm">import</span> OpenAI
+
+client = OpenAI(
+    base_url=<span class="text-primary-container">"https://api.aihub.io/v1"</span>,
+    api_key=<span class="text-taxonomy-code-ui">"YOUR_API_KEY"</span>
+)
+
+response = client.chat.completions.create(
+    model=<span class="text-taxonomy-multimodal-scroll">"anthropic/claude-3-5-sonnet"</span>, <span class="text-muted-text"># or "openai/gpt-4o", "deepseek/v3"</span>
+    messages=[{<span class="text-cream-text">"role"</span>: <span class="text-cream-text">"user"</span>, <span class="text-cream-text">"content"</span>: <span class="text-primary">"Synthesize research"</span>}],
+    extra_body={<span class="text-cream-text">"fallback_models"</span>: [<span class="text-taxonomy-code-ui">"google/gemini-1.5-flash"</span>]}
+)</code></pre>
+<div class="flex justify-between items-center text-caption font-caption text-muted-text border-t border-hairline pt-3 font-mono">
+<span>Streaming chunks &amp; Tool Calling schemas match 100%</span>
+<span class="text-primary-container">Validated 200 OK</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- MODEL DIRECTORY: 3X2 GRID OF FEATURED FLAGSHIP MODELS WITH RICH RADAR BADGES & ECONOMICS -->
+<section class="w-full py-24 px-margin-mobile md:px-margin border-b border-hairline bg-surface-canvas" id="model-matrix">
+<div class="max-w-[1360px] mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<div class="font-section-eyebrow text-section-eyebrow text-muted-text mb-space-xs font-mono">
+                { Model Directory &amp; Spec Sheet }
+              </div>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-cream-text tracking-tight font-semibold">
+                Universal Model Matrix
+              </h2>
+</div>
+<p class="font-body-md text-body-md text-muted-text max-w-md">
+              Comprehensive telemetry, token unit economics, and architectural specifications for active frontier models.
+            </p>
+</div>
+<!-- 3x2 Grid Flagship Directory -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Model Card 1: Claude 3.5 Sonnet -->
+<div class="bg-surface-panel p-7 rounded-xl border border-hairline flex flex-col justify-between hover:border-hairline/90 transition-all group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[12px] font-semibold border border-taxonomy-text-llm text-taxonomy-text-llm">
+                    Anthropic
+                  </span>
+<span class="text-caption font-mono text-primary-container">164ms p50</span>
+</div>
+<h3 class="font-headline-sm text-[26px] text-cream-text font-semibold mb-1">Claude 3.5 Sonnet</h3>
+<p class="text-caption font-caption text-muted-text mb-5 font-mono">claude-3-5-sonnet-20241022</p>
+<!-- Capability Radar Badges -->
+<div class="space-y-2.5 mb-6">
+<div>
+<div class="flex justify-between text-[12px] font-mono mb-1">
+<span class="text-muted-text">Coding &amp; Logic</span>
+<span class="text-cream-text font-semibold">93.7%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-canvas rounded-full overflow-hidden">
+<div class="bg-taxonomy-text-llm h-full rounded-full" style="width: 94%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-[12px] font-mono mb-1">
+<span class="text-muted-text">Tool Use &amp; Agents</span>
+<span class="text-cream-text font-semibold">96.2%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-canvas rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 96%"></div>
+</div>
+</div>
+</div>
+<!-- Economics Chips -->
+<div class="grid grid-cols-2 gap-2 p-3 rounded-lg bg-surface-canvas border border-hairline font-mono text-[12px]">
+<div>
+<span class="text-muted-text block text-[11px]">Input / 1M</span>
+<span class="text-cream-text font-semibold">$3.00</span>
+</div>
+<div>
+<span class="text-muted-text block text-[11px]">Output / 1M</span>
+<span class="text-cream-text font-semibold">$15.00</span>
+</div>
+<div class="col-span-2 pt-2 border-t border-hairline/60 flex justify-between">
+<span class="text-muted-text">Context Window:</span>
+<span class="text-cream-text">200,000 tokens</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-hairline flex items-center justify-between">
+<a class="text-caption font-mono text-primary hover:underline inline-flex items-center gap-1" href="#docs">
+<span>Read Spec</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+<button class="h-8 px-4 rounded-full border border-cream-text/70 text-cream-text text-[13px] hover:bg-cream-text/10 transition-colors">
+                  Benchmark
+                </button>
+</div>
+</div>
+<!-- Model Card 2: GPT-4o Omnimodal -->
+<div class="bg-surface-panel p-7 rounded-xl border border-hairline flex flex-col justify-between hover:border-hairline/90 transition-all group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[12px] font-semibold border border-taxonomy-multimodal-scroll text-taxonomy-multimodal-scroll">
+                    OpenAI
+                  </span>
+<span class="text-caption font-mono text-primary-container">188ms p50</span>
+</div>
+<h3 class="font-headline-sm text-[26px] text-cream-text font-semibold mb-1">GPT-4o Omnimodal</h3>
+<p class="text-caption font-caption text-muted-text mb-5 font-mono">gpt-4o-2024-08-06</p>
+<!-- Capability Radar Badges -->
+<div class="space-y-2.5 mb-6">
+<div>
+<div class="flex justify-between text-[12px] font-mono mb-1">
+<span class="text-muted-text">Vision &amp; Audio IO</span>
+<span class="text-cream-text font-semibold">95.4%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-canvas rounded-full overflow-hidden">
+<div class="bg-taxonomy-multimodal-scroll h-full rounded-full" style="width: 95%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-[12px] font-mono mb-1">
+<span class="text-muted-text">Multilingual Reasoning</span>
+<span class="text-cream-text font-semibold">91.8%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-canvas rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 92%"></div>
+</div>
+</div>
+</div>
+<!-- Economics Chips -->
+<div class="grid grid-cols-2 gap-2 p-3 rounded-lg bg-surface-canvas border border-hairline font-mono text-[12px]">
+<div>
+<span class="text-muted-text block text-[11px]">Input / 1M</span>
+<span class="text-cream-text font-semibold">$2.50</span>
+</div>
+<div>
+<span class="text-muted-text block text-[11px]">Output / 1M</span>
+<span class="text-cream-text font-semibold">$10.00</span>
+</div>
+<div class="col-span-2 pt-2 border-t border-hairline/60 flex justify-between">
+<span class="text-muted-text">Context Window:</span>
+<span class="text-cream-text">128,000 tokens</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-hairline flex items-center justify-between">
+<a class="text-caption font-mono text-primary hover:underline inline-flex items-center gap-1" href="#docs">
+<span>Read Spec</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+<button class="h-8 px-4 rounded-full border border-cream-text/70 text-cream-text text-[13px] hover:bg-cream-text/10 transition-colors">
+                  Benchmark
+                </button>
+</div>
+</div>
+<!-- Model Card 3: Gemini 1.5 Flash -->
+<div class="bg-surface-panel p-7 rounded-xl border border-hairline flex flex-col justify-between hover:border-hairline/90 transition-all group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[12px] font-semibold border border-taxonomy-code-ui text-taxonomy-code-ui">
+                    Google DeepMind
+                  </span>
+<span class="text-caption font-mono text-primary-container">98ms p50</span>
+</div>
+<h3 class="font-headline-sm text-[26px] text-cream-text font-semibold mb-1">Gemini 1.5 Flash</h3>
+<p class="text-caption font-caption text-muted-text mb-5 font-mono">gemini-1.5-flash-002</p>
+<!-- Capability Radar Badges -->
+<div class="space-y-2.5 mb-6">
+<div>
+<div class="flex justify-between text-[12px] font-mono mb-1">
+<span class="text-muted-text">Long-Context Retrieval</span>
+<span class="text-cream-text font-semibold">99.1%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-canvas rounded-full overflow-hidden">
+<div class="bg-taxonomy-code-ui h-full rounded-full" style="width: 99%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-[12px] font-mono mb-1">
+<span class="text-muted-text">Cost Efficiency Score</span>
+<span class="text-cream-text font-semibold">98.5%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-canvas rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 98%"></div>
+</div>
+</div>
+</div>
+<!-- Economics Chips -->
+<div class="grid grid-cols-2 gap-2 p-3 rounded-lg bg-surface-canvas border border-hairline font-mono text-[12px]">
+<div>
+<span class="text-muted-text block text-[11px]">Input / 1M</span>
+<span class="text-cream-text font-semibold">$0.075</span>
+</div>
+<div>
+<span class="text-muted-text block text-[11px]">Output / 1M</span>
+<span class="text-cream-text font-semibold">$0.30</span>
+</div>
+<div class="col-span-2 pt-2 border-t border-hairline/60 flex justify-between">
+<span class="text-muted-text">Context Window:</span>
+<span class="text-primary">1,000,000 tokens</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-hairline flex items-center justify-between">
+<a class="text-caption font-mono text-primary hover:underline inline-flex items-center gap-1" href="#docs">
+<span>Read Spec</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+<button class="h-8 px-4 rounded-full border border-cream-text/70 text-cream-text text-[13px] hover:bg-cream-text/10 transition-colors">
+                  Benchmark
+                </button>
+</div>
+</div>
+<!-- Model Card 4: DeepSeek-V3 -->
+<div class="bg-surface-panel p-7 rounded-xl border border-hairline flex flex-col justify-between hover:border-hairline/90 transition-all group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[12px] font-semibold border border-taxonomy-agent-svg text-taxonomy-agent-svg">
+                    DeepSeek AI
+                  </span>
+<span class="text-caption font-mono text-primary-container">128ms p50</span>
+</div>
+<h3 class="font-headline-sm text-[26px] text-cream-text font-semibold mb-1">DeepSeek-V3 MoE</h3>
+<p class="text-caption font-caption text-muted-text mb-5 font-mono">deepseek-chat-v3-671b</p>
+<!-- Capability Radar Badges -->
+<div class="space-y-2.5 mb-6">
+<div>
+<div class="flex justify-between text-[12px] font-mono mb-1">
+<span class="text-muted-text">Open Math &amp; Code</span>
+<span class="text-cream-text font-semibold">92.6%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-canvas rounded-full overflow-hidden">
+<div class="bg-taxonomy-agent-svg h-full rounded-full" style="width: 93%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-[12px] font-mono mb-1">
+<span class="text-muted-text">MoE Sparsity Balance</span>
+<span class="text-cream-text font-semibold">94.0%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-canvas rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 94%"></div>
+</div>
+</div>
+</div>
+<!-- Economics Chips -->
+<div class="grid grid-cols-2 gap-2 p-3 rounded-lg bg-surface-canvas border border-hairline font-mono text-[12px]">
+<div>
+<span class="text-muted-text block text-[11px]">Input / 1M</span>
+<span class="text-cream-text font-semibold">$0.14</span>
+</div>
+<div>
+<span class="text-muted-text block text-[11px]">Output / 1M</span>
+<span class="text-cream-text font-semibold">$0.28</span>
+</div>
+<div class="col-span-2 pt-2 border-t border-hairline/60 flex justify-between">
+<span class="text-muted-text">Context Window:</span>
+<span class="text-cream-text">64,000 tokens</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-hairline flex items-center justify-between">
+<a class="text-caption font-mono text-primary hover:underline inline-flex items-center gap-1" href="#docs">
+<span>Read Spec</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+<button class="h-8 px-4 rounded-full border border-cream-text/70 text-cream-text text-[13px] hover:bg-cream-text/10 transition-colors">
+                  Benchmark
+                </button>
+</div>
+</div>
+<!-- Model Card 5: Qwen 2.5 Coder -->
+<div class="bg-surface-panel p-7 rounded-xl border border-hairline flex flex-col justify-between hover:border-hairline/90 transition-all group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[12px] font-semibold border border-taxonomy-code-ui text-taxonomy-code-ui">
+                    Alibaba Cloud
+                  </span>
+<span class="text-caption font-mono text-primary-container">132ms p50</span>
+</div>
+<h3 class="font-headline-sm text-[26px] text-cream-text font-semibold mb-1">Qwen 2.5 Coder 32B</h3>
+<p class="text-caption font-caption text-muted-text mb-5 font-mono">qwen-2.5-coder-32b-instruct</p>
+<!-- Capability Radar Badges -->
+<div class="space-y-2.5 mb-6">
+<div>
+<div class="flex justify-between text-[12px] font-mono mb-1">
+<span class="text-muted-text">Frontend &amp; DOM Parsing</span>
+<span class="text-cream-text font-semibold">90.2%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-canvas rounded-full overflow-hidden">
+<div class="bg-taxonomy-code-ui h-full rounded-full" style="width: 90%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-[12px] font-mono mb-1">
+<span class="text-muted-text">FIM (Fill-in-Middle)</span>
+<span class="text-cream-text font-semibold">93.8%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-canvas rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 94%"></div>
+</div>
+</div>
+</div>
+<!-- Economics Chips -->
+<div class="grid grid-cols-2 gap-2 p-3 rounded-lg bg-surface-canvas border border-hairline font-mono text-[12px]">
+<div>
+<span class="text-muted-text block text-[11px]">Input / 1M</span>
+<span class="text-cream-text font-semibold">$0.20</span>
+</div>
+<div>
+<span class="text-muted-text block text-[11px]">Output / 1M</span>
+<span class="text-cream-text font-semibold">$0.60</span>
+</div>
+<div class="col-span-2 pt-2 border-t border-hairline/60 flex justify-between">
+<span class="text-muted-text">Context Window:</span>
+<span class="text-cream-text">128,000 tokens</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-hairline flex items-center justify-between">
+<a class="text-caption font-mono text-primary hover:underline inline-flex items-center gap-1" href="#docs">
+<span>Read Spec</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+<button class="h-8 px-4 rounded-full border border-cream-text/70 text-cream-text text-[13px] hover:bg-cream-text/10 transition-colors">
+                  Benchmark
+                </button>
+</div>
+</div>
+<!-- Model Card 6: Llama 3.3 70B -->
+<div class="bg-surface-panel p-7 rounded-xl border border-hairline flex flex-col justify-between hover:border-hairline/90 transition-all group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[12px] font-semibold border border-taxonomy-text-llm text-taxonomy-text-llm">
+                    Meta AI
+                  </span>
+<span class="text-caption font-mono text-primary-container">119ms p50</span>
+</div>
+<h3 class="font-headline-sm text-[26px] text-cream-text font-semibold mb-1">Llama 3.3 70B</h3>
+<p class="text-caption font-caption text-muted-text mb-5 font-mono">meta-llama-3.3-70b-instruct</p>
+<!-- Capability Radar Badges -->
+<div class="space-y-2.5 mb-6">
+<div>
+<div class="flex justify-between text-[12px] font-mono mb-1">
+<span class="text-muted-text">Open Weight Generalist</span>
+<span class="text-cream-text font-semibold">88.5%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-canvas rounded-full overflow-hidden">
+<div class="bg-taxonomy-text-llm h-full rounded-full" style="width: 88%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between text-[12px] font-mono mb-1">
+<span class="text-muted-text">Throughput Saturation</span>
+<span class="text-cream-text font-semibold">96.7%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-canvas rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 97%"></div>
+</div>
+</div>
+</div>
+<!-- Economics Chips -->
+<div class="grid grid-cols-2 gap-2 p-3 rounded-lg bg-surface-canvas border border-hairline font-mono text-[12px]">
+<div>
+<span class="text-muted-text block text-[11px]">Input / 1M</span>
+<span class="text-cream-text font-semibold">$0.18</span>
+</div>
+<div>
+<span class="text-muted-text block text-[11px]">Output / 1M</span>
+<span class="text-cream-text font-semibold">$0.54</span>
+</div>
+<div class="col-span-2 pt-2 border-t border-hairline/60 flex justify-between">
+<span class="text-muted-text">Context Window:</span>
+<span class="text-cream-text">128,000 tokens</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-hairline flex items-center justify-between">
+<a class="text-caption font-mono text-primary hover:underline inline-flex items-center gap-1" href="#docs">
+<span>Read Spec</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+<button class="h-8 px-4 rounded-full border border-cream-text/70 text-cream-text text-[13px] hover:bg-cream-text/10 transition-colors">
+                  Benchmark
+                </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- AGENT ECOSYSTEM SHOWCASE: WORKFLOW PREVIEWS, PIPELINE EXECUTION SNAPSHOTS -->
+<section class="w-full py-24 px-margin-mobile md:px-margin border-b border-hairline bg-surface-canvas" id="agent-workflows">
+<div class="max-w-[1360px] mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<div class="font-section-eyebrow text-section-eyebrow text-muted-text mb-space-xs font-mono">
+                { Autonomous Agent Ecosystem }
+              </div>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-cream-text tracking-tight font-semibold">
+                Multi-Agent Pipelines in Motion
+              </h2>
+</div>
+<p class="font-body-md text-body-md text-muted-text max-w-md">
+              Inspect step-by-step pipeline executions, deterministic sandboxed memory trees, and multi-model collaboration topologies.
+            </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Agent Workflow Card 1 -->
+<div class="bg-surface-panel rounded-xl border border-hairline overflow-hidden flex flex-col justify-between">
+<div class="p-6">
+<div class="flex items-center justify-between mb-3">
+<span class="px-2.5 py-0.5 rounded-full text-[12px] font-mono font-semibold border border-taxonomy-agent-svg text-taxonomy-agent-svg">
+                    Pipeline #01
+                  </span>
+<span class="text-caption font-mono text-muted-text">3 Nodes</span>
+</div>
+<h3 class="font-headline-sm text-[22px] text-cream-text font-semibold mb-2">Systems Architect Agent</h3>
+<p class="text-body-sm text-muted-text mb-6">
+                  Ingests GitHub issues, runs static analysis, generates structural RFC proposals, and outputs unified PR diffs.
+                </p>
+<!-- Step-by-Step Execution Pipeline Snapshot -->
+<div class="space-y-3 p-4 rounded-lg bg-surface-canvas border border-hairline font-mono text-[12px]">
+<div class="flex items-center gap-2">
+<span class="w-4 h-4 rounded-full bg-primary-container/20 text-primary-container flex items-center justify-center text-[10px]">1</span>
+<span class="text-cream-text">AST Parse</span>
+<span class="ml-auto text-muted-text">Claude 3.5</span>
+</div>
+<div class="w-0.5 h-2 bg-hairline ml-2"></div>
+<div class="flex items-center gap-2">
+<span class="w-4 h-4 rounded-full bg-taxonomy-code-ui/20 text-taxonomy-code-ui flex items-center justify-center text-[10px]">2</span>
+<span class="text-cream-text">Logic Synthesis</span>
+<span class="ml-auto text-muted-text">o1-mini</span>
+</div>
+<div class="w-0.5 h-2 bg-hairline ml-2"></div>
+<div class="flex items-center gap-2">
+<span class="w-4 h-4 rounded-full bg-taxonomy-agent-svg/20 text-taxonomy-agent-svg flex items-center justify-center text-[10px]">3</span>
+<span class="text-cream-text">Test Validation</span>
+<span class="ml-auto text-primary">0 Errors</span>
+</div>
+</div>
+</div>
+<div class="p-6 pt-0">
+<button class="w-full inline-flex items-center justify-center h-[46px] rounded-full border border-cream-text text-cream-text text-button-text font-button-text text-[15px] hover:bg-cream-text/10 transition-colors">
+                  Run Execution Sandbox
+                </button>
+</div>
+</div>
+<!-- Agent Workflow Card 2 -->
+<div class="bg-surface-panel rounded-xl border border-hairline overflow-hidden flex flex-col justify-between">
+<div class="p-6">
+<div class="flex items-center justify-between mb-3">
+<span class="px-2.5 py-0.5 rounded-full text-[12px] font-mono font-semibold border border-taxonomy-multimodal-scroll text-taxonomy-multimodal-scroll">
+                    Pipeline #02
+                  </span>
+<span class="text-caption font-mono text-muted-text">4 Nodes</span>
+</div>
+<h3 class="font-headline-sm text-[22px] text-cream-text font-semibold mb-2">Multimodal Data Synthesizer</h3>
+<p class="text-body-sm text-muted-text mb-6">
+                  Downloads financial PDF earnings, executes OCR with bounding boxes, computes rolling EBITDA, and formats charts.
+                </p>
+<!-- Step-by-Step Execution Pipeline Snapshot -->
+<div class="space-y-3 p-4 rounded-lg bg-surface-canvas border border-hairline font-mono text-[12px]">
+<div class="flex items-center gap-2">
+<span class="w-4 h-4 rounded-full bg-taxonomy-multimodal-scroll/20 text-taxonomy-multimodal-scroll flex items-center justify-center text-[10px]">1</span>
+<span class="text-cream-text">Vision Vectorize</span>
+<span class="ml-auto text-muted-text">GPT-4o</span>
+</div>
+<div class="w-0.5 h-2 bg-hairline ml-2"></div>
+<div class="flex items-center gap-2">
+<span class="w-4 h-4 rounded-full bg-taxonomy-code-ui/20 text-taxonomy-code-ui flex items-center justify-center text-[10px]">2</span>
+<span class="text-cream-text">Pandas Sandbox</span>
+<span class="ml-auto text-muted-text">Pyodide</span>
+</div>
+<div class="w-0.5 h-2 bg-hairline ml-2"></div>
+<div class="flex items-center gap-2">
+<span class="w-4 h-4 rounded-full bg-primary-container/20 text-primary-container flex items-center justify-center text-[10px]">3</span>
+<span class="text-cream-text">Briefing Output</span>
+<span class="ml-auto text-primary">Markdown</span>
+</div>
+</div>
+</div>
+<div class="p-6 pt-0">
+<button class="w-full inline-flex items-center justify-center h-[46px] rounded-full border border-cream-text text-cream-text text-button-text font-button-text text-[15px] hover:bg-cream-text/10 transition-colors">
+                  Run Execution Sandbox
+                </button>
+</div>
+</div>
+<!-- Agent Workflow Card 3 -->
+<div class="bg-surface-panel rounded-xl border border-hairline overflow-hidden flex flex-col justify-between">
+<div class="p-6">
+<div class="flex items-center justify-between mb-3">
+<span class="px-2.5 py-0.5 rounded-full text-[12px] font-mono font-semibold border border-taxonomy-code-ui text-taxonomy-code-ui">
+                    Pipeline #03
+                  </span>
+<span class="text-caption font-mono text-muted-text">2 Nodes</span>
+</div>
+<h3 class="font-headline-sm text-[22px] text-cream-text font-semibold mb-2">Autonomous UI Transformer</h3>
+<p class="text-body-sm text-muted-text mb-6">
+                  Converts design tokens and screenshot mockups into semantic, responsive Tailwind CSS with complete ARIA attributes.
+                </p>
+<!-- Step-by-Step Execution Pipeline Snapshot -->
+<div class="space-y-3 p-4 rounded-lg bg-surface-canvas border border-hairline font-mono text-[12px]">
+<div class="flex items-center gap-2">
+<span class="w-4 h-4 rounded-full bg-taxonomy-code-ui/20 text-taxonomy-code-ui flex items-center justify-center text-[10px]">1</span>
+<span class="text-cream-text">Visual Segmentation</span>
+<span class="ml-auto text-muted-text">Gemini 1.5</span>
+</div>
+<div class="w-0.5 h-2 bg-hairline ml-2"></div>
+<div class="flex items-center gap-2">
+<span class="w-4 h-4 rounded-full bg-primary-container/20 text-primary-container flex items-center justify-center text-[10px]">2</span>
+<span class="text-cream-text">Code Emit</span>
+<span class="ml-auto text-muted-text">Qwen 2.5 Coder</span>
+</div>
+<div class="w-0.5 h-2 bg-hairline ml-2"></div>
+<div class="flex items-center gap-2">
+<span class="w-4 h-4 rounded-full bg-taxonomy-text-llm/20 text-taxonomy-text-llm flex items-center justify-center text-[10px]">3</span>
+<span class="text-cream-text">Accessibility Linter</span>
+<span class="ml-auto text-primary">Passed WCAG</span>
+</div>
+</div>
+</div>
+<div class="p-6 pt-0">
+<button class="w-full inline-flex items-center justify-center h-[46px] rounded-full border border-cream-text text-cream-text text-button-text font-button-text text-[15px] hover:bg-cream-text/10 transition-colors">
+                  Run Execution Sandbox
+                </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- DEVELOPER CONSOLE TELEMETRY & PLAYGROUND -->
+<section class="w-full py-24 px-margin-mobile md:px-margin border-b border-hairline bg-surface-canvas" id="telemetry">
+<div class="max-w-[1360px] mx-auto">
+<div class="flex flex-col items-center text-center mb-16">
+<div class="font-section-eyebrow text-section-eyebrow text-muted-text mb-space-xs font-mono">
+              { Console Telemetry Snapshot }
+            </div>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-cream-text tracking-tight font-semibold max-w-3xl">
+              Microsecond Telemetry for Critical Production
+            </h2>
+<p class="font-body-md text-body-md text-muted-text max-w-xl mt-3">
+              Real-time trace graphs, packet hops, and unified token meters accessible right within the developer dashboard.
+            </p>
+</div>
+<div class="w-full bg-surface-panel rounded-xl border border-hairline overflow-hidden">
+<div class="h-12 bg-surface-container-low px-4 border-b border-hairline flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-3 h-3 rounded-full bg-hairline"></div>
+<div class="w-3 h-3 rounded-full bg-hairline"></div>
+<div class="w-3 h-3 rounded-full bg-hairline"></div>
+<span class="ml-4 font-mono text-[12px] text-muted-text">telemetry.aihub.io/clusters/prod-global-mesh</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded text-[11px] font-mono text-primary-container bg-surface-container">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+                  Active Routing: 99.994% Availability
+                </span>
+</div>
+</div>
+<div class="p-6 md:p-8 space-y-6">
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+<div class="bg-surface-canvas p-4 rounded-lg border border-hairline">
+<div class="text-caption font-caption text-muted-text">Total Ingested Tokens (30d)</div>
+<div class="font-headline-sm text-[26px] text-cream-text font-mono mt-1 font-semibold">1,842,910,240</div>
+<div class="text-[12px] text-primary-container font-mono mt-1">99.98% delivery rate</div>
+</div>
+<div class="bg-surface-canvas p-4 rounded-lg border border-hairline">
+<div class="text-caption font-caption text-muted-text">Global p95 Latency</div>
+<div class="font-headline-sm text-[26px] text-cream-text font-mono mt-1 font-semibold">168ms</div>
+<div class="text-[12px] text-primary-container font-mono mt-1">-32ms edge-cached</div>
+</div>
+<div class="bg-surface-canvas p-4 rounded-lg border border-hairline">
+<div class="text-caption font-caption text-muted-text">Semantic Caching Saved</div>
+<div class="font-headline-sm text-[26px] text-primary font-mono mt-1 font-semibold">$6,482.10</div>
+<div class="text-[12px] text-muted-text font-mono mt-1">44.1% queries deduplicated</div>
+</div>
+<div class="bg-surface-canvas p-4 rounded-lg border border-hairline">
+<div class="text-caption font-caption text-muted-text">Active Model Pools</div>
+<div class="font-headline-sm text-[26px] text-cream-text font-mono mt-1 font-semibold">18 / 240+</div>
+<div class="text-[12px] text-muted-text font-mono mt-1">Zero vendor locks</div>
+</div>
+</div>
+<!-- Sparkline & Spec Playground -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6" id="playground">
+<div class="lg:col-span-7 bg-surface-canvas p-6 rounded-lg border border-hairline flex flex-col justify-between">
+<div class="flex items-center justify-between mb-4">
+<span class="font-button-text text-cream-text text-[15px]">Edge Ingestion vs Provider Response</span>
+<div class="flex items-center gap-3 text-[12px] font-mono">
+<span class="flex items-center gap-1.5 text-cream-text">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span> Success 200
+                      </span>
+<span class="flex items-center gap-1.5 text-muted-text">
+<span class="w-2 h-2 rounded-full bg-taxonomy-code-ui"></span> Semantic Hit
+                      </span>
+</div>
+</div>
+<div class="w-full h-44 my-2 flex items-end">
+<svg class="w-full h-full text-primary" fill="none" preserveaspectratio="none" viewbox="0 0 500 120">
+<path d="M0,90 C50,70 100,85 150,35 C200,15 250,55 300,25 C350,10 400,65 450,35 C480,18 495,12 500,8" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+<path d="M0,90 C50,70 100,85 150,35 C200,15 250,55 300,25 C350,10 400,65 450,35 C480,18 495,12 500,8 L500,120 L0,120 Z" fill="currentColor" fill-opacity="0.08"></path>
+<path d="M0,105 C60,100 120,75 180,65 C240,60 300,45 360,50 C420,55 460,35 500,25" stroke="#00bae2" stroke-dasharray="4 4" stroke-width="1.5"></path>
+</svg>
+</div>
+<div class="flex justify-between items-center text-caption font-caption text-muted-text border-t border-hairline pt-3 font-mono">
+<span>Edge: AWS us-east-1</span>
+<span>Edge: GCP europe-west3</span>
+<span>Edge: Cloudflare Tokyo</span>
+<span class="text-primary-container">Live</span>
+</div>
+</div>
+<div class="lg:col-span-5 bg-surface-canvas p-6 rounded-lg border border-hairline flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-3 border-b border-hairline mb-3">
+<span class="text-caption font-mono text-cream-text">Production Ingestion Sample</span>
+<span class="text-[12px] font-mono text-taxonomy-code-ui">Live Staging</span>
+</div>
+<pre class="font-mono text-[12px] text-cream-text/90 leading-relaxed overflow-x-auto"><code><span class="text-muted-text">// Request with Hedged Outage Fallback</span>
+<span class="text-taxonomy-text-llm">POST</span> /v1/chat/completions
+{
+  <span class="text-cream-text">"model"</span>: <span class="text-primary-container">"anthropic/claude-3-5-sonnet"</span>,
+  <span class="text-cream-text">"fallback"</span>: [<span class="text-taxonomy-code-ui">"openai/gpt-4o"</span>, <span class="text-taxonomy-agent-svg">"deepseek/v3"</span>],
+  <span class="text-cream-text">"cache_threshold"</span>: 0.92,
+  <span class="text-cream-text">"stream"</span>: true
+}</code></pre>
+</div>
+<div class="mt-4 pt-3 border-t border-hairline flex items-center justify-between text-caption font-caption">
+<span class="text-muted-text">Zero wrapper dependencies</span>
+<span class="text-primary-container font-mono">200 Streaming Chunk OK</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PRICING & FAQ: TRUE AT-COST TOKEN CONSUMPTION -->
+<section class="w-full py-24 px-margin-mobile md:px-margin border-b border-hairline bg-surface-canvas" id="at-cost-pricing">
+<div class="max-w-[1360px] mx-auto">
+<div class="flex flex-col items-center text-center mb-16">
+<div class="font-section-eyebrow text-section-eyebrow text-muted-text mb-space-xs font-mono">
+              { Token Economics &amp; Pricing }
+            </div>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-cream-text tracking-tight font-semibold max-w-3xl">
+              True At-Cost Token Consumption
+            </h2>
+<p class="font-body-md text-body-md text-muted-text max-w-xl mt-3">
+              We never add markups to token costs from OpenAI, Anthropic, or Google. You pay raw upstream rates plus a flat gateway membership.
+            </p>
+</div>
+<!-- Minimalist 3-Card Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch mb-20">
+<!-- Tier 1 -->
+<div class="bg-surface-panel p-8 rounded-xl border border-hairline flex flex-col justify-between">
+<div>
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[12px] font-mono text-muted-text border border-hairline">
+                  Hobbyist &amp; Sandbox
+                </span>
+<div class="mt-4 mb-2">
+<span class="font-headline-lg text-[44px] text-cream-text font-mono font-semibold">$0</span>
+<span class="font-body-sm text-muted-text">/ month</span>
+</div>
+<p class="font-body-sm text-muted-text">
+                  Direct pass-through token billing. Immediate access to all 240+ models with no commitments or hidden fees.
+                </p>
+<div class="space-y-3 mt-8 pt-6 border-t border-hairline font-body-sm text-cream-text/90">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary">check</span>
+<span>1 Universal API Key</span>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary">check</span>
+<span>10,000 Free Semantic Cache hits</span>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary">check</span>
+<span>Zero-login API docs &amp; playground</span>
+</div>
+</div>
+</div>
+<div class="mt-10">
+<button class="w-full inline-flex items-center justify-center h-[50px] rounded-full border border-cream-text text-cream-text font-button-text hover:bg-cream-text/10 transition-colors">
+                  Generate Free Key
+                </button>
+</div>
+</div>
+<!-- Tier 2 (Highlighted) -->
+<div class="bg-surface-panel p-8 rounded-xl border-2 border-primary-container relative flex flex-col justify-between">
+<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary-container text-on-primary-container font-caption text-[11px] font-mono font-semibold px-3 py-0.5 rounded-full uppercase tracking-wider">
+                Production Choice
+              </div>
+<div>
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[12px] font-mono border border-primary text-primary">
+                  Engineering Teams
+                </span>
+<div class="mt-4 mb-2">
+<span class="font-headline-lg text-[44px] text-cream-text font-mono font-semibold">$29</span>
+<span class="font-body-sm text-muted-text">/ month</span>
+</div>
+<p class="font-body-sm text-muted-text">
+                  High-availability routing for scaling apps. Multi-region redundancy, rate-limit hedging, and team keys.
+                </p>
+<div class="space-y-3 mt-8 pt-6 border-t border-hairline font-body-sm text-cream-text/90">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary">check</span>
+<span>All models at 0% token surcharge</span>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary">check</span>
+<span>Smart Failover &amp; Hedged Routing</span>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary">check</span>
+<span>1,000,000 Semantic Cache queries</span>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary">check</span>
+<span>Team RBAC &amp; monthly budget caps</span>
+</div>
+</div>
+</div>
+<div class="mt-10">
+<button class="relative w-full inline-flex items-center justify-center h-[50px] rounded-full text-cream-text font-button-text group transition-opacity hover:opacity-90">
+<span class="absolute inset-0 rounded-full p-[1.5px] bg-gradient-to-r from-primary-container via-taxonomy-code-ui to-taxonomy-multimodal-scroll">
+<span class="flex h-full w-full rounded-full bg-surface-canvas items-center justify-center"></span>
+</span>
+<span class="relative z-10 text-cream-text font-button-text">Start 14-Day Free Trial</span>
+</button>
+</div>
+</div>
+<!-- Tier 3 -->
+<div class="bg-surface-panel p-8 rounded-xl border border-hairline flex flex-col justify-between">
+<div>
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-[12px] font-mono text-muted-text border border-hairline">
+                  Enterprise Infrastructure
+                </span>
+<div class="mt-4 mb-2">
+<span class="font-headline-lg text-[44px] text-cream-text font-mono font-semibold">Custom</span>
+</div>
+<p class="font-body-sm text-muted-text">
+                  Isolated VPC deployments, Bring-Your-Own-Key (BYOK) negotiation pass-through, and SOC2 compliance.
+                </p>
+<div class="space-y-3 mt-8 pt-6 border-t border-hairline font-body-sm text-cream-text/90">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary">check</span>
+<span>Dedicated Bare-Metal Edge Proxies</span>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary">check</span>
+<span>Bring-Your-Own-Key (BYOK) support</span>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary">check</span>
+<span>Unlimited semantic vector memory</span>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary">check</span>
+<span>99.99% Custom SLA guarantee</span>
+</div>
+</div>
+</div>
+<div class="mt-10">
+<button class="w-full inline-flex items-center justify-center h-[50px] rounded-full border border-cream-text text-cream-text font-button-text hover:bg-cream-text/10 transition-colors">
+                  Contact Systems Architects
+                </button>
+</div>
+</div>
+</div>
+<!-- Feature Breakdown Table -->
+<div class="w-full overflow-x-auto bg-surface-panel rounded-xl border border-hairline p-6">
+<h4 class="font-headline-sm text-[20px] text-cream-text font-semibold mb-4">Detailed Feature Matrix</h4>
+<table class="w-full text-left border-collapse text-body-sm">
+<thead>
+<tr class="border-b border-hairline text-caption font-mono text-muted-text">
+<th class="py-3 px-4">Capability</th>
+<th class="py-3 px-4">Sandbox ($0)</th>
+<th class="py-3 px-4">Production ($29)</th>
+<th class="py-3 px-4">Enterprise (Custom)</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-hairline font-mono text-[13px] text-cream-text/80">
+<tr>
+<td class="py-3 px-4 font-sans text-cream-text">Token Markup</td>
+<td class="py-3 px-4 text-primary font-semibold">0.0%</td>
+<td class="py-3 px-4 text-primary font-semibold">0.0%</td>
+<td class="py-3 px-4 text-primary font-semibold">0.0%</td>
+</tr>
+<tr>
+<td class="py-3 px-4 font-sans text-cream-text">Smart Outage Failover</td>
+<td class="py-3 px-4 text-muted-text">Manual</td>
+<td class="py-3 px-4 text-primary">Automated sub-10ms</td>
+<td class="py-3 px-4 text-primary">Custom Hedged Routes</td>
+</tr>
+<tr>
+<td class="py-3 px-4 font-sans text-cream-text">Data Retention</td>
+<td class="py-3 px-4">Zero (RAM only)</td>
+<td class="py-3 px-4">Zero (RAM only)</td>
+<td class="py-3 px-4">Zero + VPC Auditing</td>
+</tr>
+<tr>
+<td class="py-3 px-4 font-sans text-cream-text">BYOK (Bring Your Own Key)</td>
+<td class="py-3 px-4 text-muted-text">No</td>
+<td class="py-3 px-4 text-muted-text">No</td>
+<td class="py-3 px-4 text-primary">Yes (Unlimited)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- FAQ ACCORDION -->
+<div class="max-w-[880px] mx-auto mt-24" id="faq">
+<div class="text-center mb-12">
+<span class="font-section-eyebrow text-muted-text font-mono">{ Inquiries &amp; Answers }</span>
+<h3 class="font-headline-md text-headline-sm lg:text-headline-md text-cream-text font-semibold mt-2">
+                Frequently Addressed Inquiries
+              </h3>
+</div>
+<div class="space-y-4">
+<div class="bg-surface-panel rounded-lg border border-hairline overflow-hidden">
+<button class="w-full py-5 px-6 flex items-center justify-between text-left text-cream-text hover:text-primary transition-colors" onclick="toggleFaq(this)">
+<span class="font-button-text text-[17px]">How is zero percent token surcharge verified?</span>
+<span class="material-symbols-outlined faq-icon text-[20px] transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content hidden px-6 pb-6 pt-1 text-body-md text-muted-text border-t border-hairline">
+                  Every request response includes our raw upstream HTTP receipt headers matching official Anthropic, OpenAI, or Google token consumption figures. Your itemized usage ledger mirrors provider rates down to 6 decimal places.
+                </div>
+</div>
+<div class="bg-surface-panel rounded-lg border border-hairline overflow-hidden">
+<button class="w-full py-5 px-6 flex items-center justify-between text-left text-cream-text hover:text-primary transition-colors" onclick="toggleFaq(this)">
+<span class="font-button-text text-[17px]">Does AI Hub store prompt payloads or train on data?</span>
+<span class="material-symbols-outlined faq-icon text-[20px] transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content hidden px-6 pb-6 pt-1 text-body-md text-muted-text border-t border-hairline">
+                  Strictly zero data retention. Data packets stream ephemerally through RAM buffers without touching persistent disks. Furthermore, our enterprise upstream agreements legally guarantee that frontier providers do not train on API traffic.
+                </div>
+</div>
+<div class="bg-surface-panel rounded-lg border border-hairline overflow-hidden">
+<button class="w-full py-5 px-6 flex items-center justify-between text-left text-cream-text hover:text-primary transition-colors" onclick="toggleFaq(this)">
+<span class="font-button-text text-[17px]">Can I swap from OpenAI to Claude in 10 seconds?</span>
+<span class="material-symbols-outlined faq-icon text-[20px] transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-content hidden px-6 pb-6 pt-1 text-body-md text-muted-text border-t border-hairline">
+                  Yes. Simply change the string value of the "model" parameter from "gpt-4o" to "anthropic/claude-3-5-sonnet". Our gateway normalizes parameter translation, tools/functions payloads, and streaming deltas automatically.
+                </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- EDITORIAL FINAL CALL TO ACTION -->
+<section class="relative w-full py-28 px-margin-mobile md:px-margin bg-surface-canvas overflow-hidden" id="get-started">
+<!-- Localized ambient glow aura -->
+<div class="pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2 w-[850px] h-[360px] opacity-25 blur-[120px] rounded-full bg-gradient-to-r from-primary via-taxonomy-code-ui to-taxonomy-multimodal-scroll"></div>
+<div class="relative max-w-[1360px] mx-auto text-center flex flex-col items-center">
+<div class="font-section-eyebrow text-section-eyebrow text-muted-text mb-space-sm font-mono">
+            { Connect Frontier Intelligence }
+          </div>
+<h2 class="font-headline-lg text-headline-lg-mobile lg:text-headline-lg text-cream-text tracking-tight font-semibold max-w-4xl text-balance">
+            Stop juggling 12 API accounts. Build on AI Hub today.
+          </h2>
+<p class="font-body-lead text-body-lead text-muted-text max-w-2xl mt-space-md leading-relaxed">
+            Obtain your cryptographically signed universal key in 30 seconds. No credit card required to explore the sandbox matrix.
+          </p>
+<div class="flex flex-wrap items-center justify-center gap-space-md mt-space-xl">
+<a class="relative inline-flex items-center justify-center h-[52px] px-space-xl rounded-full text-cream-text font-button-text group transition-opacity hover:opacity-95" href="#">
+<span class="absolute inset-0 rounded-full p-[1.5px] bg-gradient-to-r from-primary-container via-taxonomy-code-ui to-taxonomy-multimodal-scroll">
+<span class="flex h-full w-full rounded-full bg-surface-canvas items-center justify-center"></span>
+</span>
+<span class="relative z-10 flex items-center gap-2 text-cream-text font-button-text">
+<span>Start Free Sandbox</span>
+<span class="material-symbols-outlined text-[19px] text-primary">arrow_forward</span>
+</span>
+</a>
+<a class="inline-flex items-center justify-center h-[52px] px-space-xl rounded-full border border-cream-text bg-transparent text-cream-text font-button-text hover:bg-cream-text/10 transition-colors" href="#model-matrix">
+              Inspect Model Specs
+            </a>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- FOOTER -->
+<footer class="w-full bg-surface-panel border-t border-hairline">
+<div class="max-w-[1360px] mx-auto px-margin-mobile md:px-gutter pt-space-xl pb-space-lg">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-space-xl pb-space-xl border-b border-hairline">
+<div class="lg:col-span-2 flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-[22px] font-semibold text-cream-text">AI Hub</span>
+<span class="font-caption text-caption text-primary-container border border-primary-container/30 px-2 py-0.5 rounded-full font-mono">v2.4 Editorial</span>
+</div>
+<p class="font-section-eyebrow text-section-eyebrow text-muted-text font-mono">{ The Definitive Machine Intelligence Layer }</p>
+<p class="font-body-sm text-body-sm text-muted-text max-w-sm mt-space-xs">
+            Mathematical vector precision and low-jitter packet routing across OpenAI, Anthropic, Google DeepMind, and open-weights infrastructure.
+          </p>
+<div class="flex items-center gap-2 mt-space-md">
+<span class="inline-block w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-caption text-caption text-cream-text font-mono">Global Mesh Active • Zero Latency Overhead</span>
+</div>
+</div>
+<div>
+<h4 class="font-caption text-caption text-muted-text uppercase tracking-wider mb-space-md font-mono">Monographs</h4>
+<ul class="flex flex-col gap-space-xs font-body-sm text-body-sm">
+<li class="py-0.5"><a class="text-cream-text/80 hover:text-cream-text transition-colors" href="#chapters">01 Architectural Superiority</a></li>
+<li class="py-0.5"><a class="text-cream-text/80 hover:text-cream-text transition-colors" href="#chapters">02 Telemetry &amp; Benchmarks</a></li>
+<li class="py-0.5"><a class="text-cream-text/80 hover:text-cream-text transition-colors" href="#chapters">03 Zero Refactoring</a></li>
+<li class="py-0.5"><a class="text-cream-text/80 hover:text-cream-text transition-colors" href="#agent-workflows">04 Autonomous Agents</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-caption text-caption text-muted-text uppercase tracking-wider mb-space-md font-mono">Matrix Catalog</h4>
+<ul class="flex flex-col gap-space-xs font-body-sm text-body-sm">
+<li class="py-0.5"><a class="text-cream-text/80 hover:text-cream-text transition-colors" href="#model-matrix">Claude 3.5 Sonnet</a></li>
+<li class="py-0.5"><a class="text-cream-text/80 hover:text-cream-text transition-colors" href="#model-matrix">GPT-4o Omnimodal</a></li>
+<li class="py-0.5"><a class="text-cream-text/80 hover:text-cream-text transition-colors" href="#model-matrix">Gemini 1.5 Flash</a></li>
+<li class="py-0.5"><a class="text-cream-text/80 hover:text-cream-text transition-colors" href="#model-matrix">DeepSeek-V3 MoE</a></li>
+<li class="py-0.5"><a class="text-cream-text/80 hover:text-cream-text transition-colors" href="#model-matrix">Qwen 2.5 Coder</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-caption text-caption text-muted-text uppercase tracking-wider mb-space-md font-mono">Developers</h4>
+<ul class="flex flex-col gap-space-xs font-body-sm text-body-sm">
+<li class="py-0.5"><a class="text-cream-text/80 hover:text-cream-text transition-colors" href="#playground">Spec Reader</a></li>
+<li class="py-0.5"><a class="text-cream-text/80 hover:text-cream-text transition-colors" href="#telemetry">Console Telemetry</a></li>
+<li class="py-0.5"><a class="text-cream-text/80 hover:text-cream-text transition-colors" href="#chapters">Rust Proxy Architecture</a></li>
+<li class="py-0.5"><a class="text-cream-text/80 hover:text-cream-text transition-colors" href="#at-cost-pricing">Token Audit Logs</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-caption text-caption text-muted-text uppercase tracking-wider mb-space-md font-mono">Organisation</h4>
+<ul class="flex flex-col gap-space-xs font-body-sm text-body-sm">
+<li class="py-0.5"><a class="text-cream-text/80 hover:text-cream-text transition-colors" href="#">Manifesto</a></li>
+<li class="py-0.5"><a class="text-cream-text/80 hover:text-cream-text transition-colors" href="#">Zero Retention Policy</a></li>
+<li class="py-0.5"><a class="text-cream-text/80 hover:text-cream-text transition-colors" href="#">SOC2 Type II</a></li>
+<li class="py-0.5"><a class="text-cream-text/80 hover:text-cream-text transition-colors" href="#">Security Inquiries</a></li>
+</ul>
+</div>
+</div>
+<div class="flex flex-col md:flex-row items-center justify-between gap-space-md pt-space-lg font-caption text-caption text-muted-text font-mono">
+<div>© 2025 AI Hub Labs Inc. Architectural Model Matrix Magazine Issue № 02.</div>
+<div class="flex items-center gap-space-lg">
+<a class="hover:text-cream-text transition-colors" href="#">Privacy</a>
+<a class="hover:text-cream-text transition-colors" href="#">Terms</a>
+<a class="hover:text-cream-text transition-colors" href="#">Audit Key</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    function toggleFaq(btn) {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector('.faq-icon');
+      const isHidden = content.classList.contains('hidden');
+
+      document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+      document.querySelectorAll('.faq-icon').forEach(i => i.style.transform = 'rotate(0deg)');
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        icon.style.transform = 'rotate(180deg)';
+      }
+    }
+  </script>
+</body></html>

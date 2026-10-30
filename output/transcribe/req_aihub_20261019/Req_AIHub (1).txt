@@ -1,0 +1,90 @@
+สวัสดีค่ะ วันนี้เราจะประชุมเพื่อเก็บ requirements สำรับสร้าง landing page ของ AI Hub
+โดยดิฉันจะถามเป็นหัวข้อ
+เพื่อให้ team สามารถนำข้อมูลไปสร้าง PRD, UX Flow, UI Design และ Development ได้ครบท่วนค่ะ
+โอเคครับ พร้อมครับ
+ก่อนอื่น อยากให้ช่วยอาทิบายว่า AI Hub คืออะไรคะ
+AI Hub เป็น platform ที่ร่วม AI Models และ AI Agents จาก live provider ไว้ในที่เดียว
+ผู้ใช้สามารถเลือก Models เปรียบเที่ยบราคา ทดลองใช้งาน และชื่อมต่อ API ได้ผ่าน Endpoint เดียว
+คลายกับ Open Router แต่เราจะเพิ่มมาเก็บ Place สำรับ AI Agents และ Workflow เข้าไปด้วย
+เข้าใจค่ะ แล้วทำไมถึงต้องสร้าง landing page นี้ ช่วงเวลานี้ค่ะ
+ตอนนี้ลูกค้าส่วนใหญ่เข้ามาแล้วไม่เข้าใจว่า Product ทำอะไร
+ต้องคุยกับ Team ขายก่อน ถึงจะเริ่มใช้งานได้ ทำให้เสีย Conversion และเสียเวลา
+เราต้องการให้ Website อาทิบาย Product ได้เอง
+Business Go ลักของโปรเจกนี้คืออะไรคะ
+อยากเพิ่มจำนวนผู้สมัก เพิ่มการใช้งาน API และสร้างความหน้าเชื่อถือของ Product
+ร่วมถึงรถพร้าร้า Team Sales
+ถ้าไม่มี Landing Page นี้จะเกิดผลกระทบอะไรคะ
+ไม่เข้าใจ Value ของ Product และไม่เริ่มทดลองใช้งาน
+ต่อไปอยากถามเรื่องกลุ่มผู้ใช้งานค่ะ
+ผู้ใช้งานหลักคือใครคะ
+Developer และ AI Engineer เป็นกลุ่มหลัก
+ส่วนกลุ่มรองคือ Start Up Founder
+Product Manager และ UX Designer ที่อยากทดลอง AI
+Panpoint ของกลุ่มนี้คืออะไรคะ
+ต้องสมักหลาย Platform มี API หลายชุด
+เปรียบเที่ยบโมเดลยาก และ Documentation กระจัดกระจาย
+ผู้ใช้ข้าดหวังอะไรจาก Web ใส่นี้คะ
+เข้าใจ Product พายในไม่กี่วินาที
+ดูราคา เปรียบเที่ยบโมเดล และกดสมักได้ทั้งที
+ต่อไปอยากถามเรื่องป่าวหมายค่ะ
+ถ้าเปิดใช้งาน Landing Page แล้ว อะไรคือ success คะ
+Conversion Rate ส่าย Up เพิ่มขึ้น
+CTA ทุกกดมากขึ้น และผู้ใช้ใช้เวลาอยู่ใน Web สายนานขึ้น
+Wersion แรกจะมีสโคบอะไรบ้างคะ
+Hero Section, Feature Overview, AI Models, AI Agents Marketplace Preview, Pricing, Documentation, FAQ, Call-to-Action, and Footer
+แล้วอะไรที่ยังไม่ทำในริลีสนี้คะ
+Block, Community, Lashboard, Search Babeliet, User Lock-in, and Live Playground
+ต่อไปขอถาม Functional Requirements ค่ะ
+Landing Page ต้องทำอะไรได้บ้างคะ
+Hero พร้อมข้อความหลัก สดังรายการ AI Models สดัง Feature Cards สดัง Pricing สดัง FAQ สดัง CTA หลายตำแหน่ง และสดัง Preview ของ Dashboard
+CTA หลักคืออะไรคะ
+Get Started, Explore Models และ View Documentation
+ต้องมี Animation หรือ Interaction อะไรไหมคะ
+Miscroll Animation, Carthoffer, Number Counter, Gradient Background Animation, and Smooth Transition
+ต้องรองรับ Dark Mode ไหมคะ
+ใช่ครับ, Dark Mode เป็นค่า Default
+Business Rules มีอะไรบ้างคะ
+Pricing ต้องดึงจากระบบกลาง
+Documentation เปิดได้ โดยไม่ต้องหลอกอิน
+CTA ต้องไปหน้าสาย Up
+Hero ต้องสดัง AI Models ละสุด
+และ Features Models ต้องจัดเรียงจาก Popularity
+User Journey หลักเป็นอะไรคะ
+ผู้ชายเข้า Web สาย
+อาน Hero เล่นดู Features
+ดู AI Models
+ดู Pricing
+อาน FAQ
+กด Get Started
+และไปหน้าสาย Up
+ถ้าเกิด Error หรือการณีพิเศษ
+ระบบควรทำอย่างไรคะ
+ถ้าโลธ AI Models ไม่ได้ ให้ใช้ค้อมูล Cash
+ถ้า Pricing API ลม
+ให้แสดง Default Pricing
+ถ้ารูปไม่โลธ
+ให้ใช้ PlaySolder
+และถ้า Browser ไม่รองรับ Animation
+ให้แสดงแบบ Static
+มีค้อจำกัดอะไรบ้างคะ
+Responsive to Device
+SEO Friendly
+ใช้ Next.js
+Deploy Bonversale
+รองรับ Accessibility ระดับ AI
+และโลธหน้าแรกไม่เกิน 2 วินาที
+สุดท้าย
+มีเรื่องไหนที่ยังไม่ได้ค้อสรุปบ้างคะ
+ยังไม่ตัดสินใจจะใช้ Video Hero หรือ Illustration
+ยังไม่สรุปว่าจะมี AI Chat Assistant บนหน้า Web หรือไม่
+ยังไม่สรุปรู้ Bad Pricing
+และยังไม่ตัดสินใจจะเปิด AI Agent Marketplace
+ตั้งแต่ Version แรก หรือ Version ทัดไป
+ค่อสรุปนะคะ
+วันนี้เราได้ค้อมูลด้าน Business Goals, Users, Scope,
+Functional Requirements, Business Rules, User Flow,
+HKCs, Constraints, และ Success Metrics ครบโทรแล้ว
+ค่อนตอนทัดไปจะนำค้อมูลทั้งหมดไปจัดทำ PRD
+และแตกเป็น Epic, User Stories, UX Flow,
+WiFrame และให้ Fidelity Design เพื่อส่งต่อทีมพัฒนาค่ะ
+โอเคครับ เห็นด้วยตามนี้ สามารถดำเนินการต่อได้เลย

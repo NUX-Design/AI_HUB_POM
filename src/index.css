@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@config "../tailwind.config.cjs";
+
+@layer base {
+  html {
+    scroll-behavior: auto;
+    background: #0e100f;
+  }
+
+  body {
+    min-width: 320px;
+    margin: 0;
+    overscroll-behavior-y: auto;
+  }
+
+  p {
+    max-width: 80ch;
+    line-height: 1.5;
+    margin-block-end: 2em;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  :where(a, button, summary, [tabindex="0"]):focus-visible {
+    outline: 2px solid #65ff71;
+    outline-offset: 3px;
+  }
+
+  [id] {
+    scroll-margin-top: 6rem;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 100;
+  inset-block-start: 0.5rem;
+  inset-inline-start: 0.5rem;
+  transform: translateY(-200%);
+  border-radius: 9999px;
+  background: #65ff71;
+  color: #00390b;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}

@@ -1,0 +1,91 @@
+start	end	text
+0	6000	สวัสดีค่ะ วันนี้เราจะประชุมเพื่อเก็บ requirements สำรับสร้าง landing page ของ AI Hub
+6000	8000	โดยดิฉันจะถามเป็นหัวข้อ
+8000	15000	เพื่อให้ team สามารถนำข้อมูลไปสร้าง PRD, UX Flow, UI Design และ Development ได้ครบท่วนค่ะ
+15000	16000	โอเคครับ พร้อมครับ
+16000	20000	ก่อนอื่น อยากให้ช่วยอาทิบายว่า AI Hub คืออะไรคะ
+20000	26000	AI Hub เป็น platform ที่ร่วม AI Models และ AI Agents จาก live provider ไว้ในที่เดียว
+26000	32000	ผู้ใช้สามารถเลือก Models เปรียบเที่ยบราคา ทดลองใช้งาน และชื่อมต่อ API ได้ผ่าน Endpoint เดียว
+32000	38000	คลายกับ Open Router แต่เราจะเพิ่มมาเก็บ Place สำรับ AI Agents และ Workflow เข้าไปด้วย
+38000	42000	เข้าใจค่ะ แล้วทำไมถึงต้องสร้าง landing page นี้ ช่วงเวลานี้ค่ะ
+42000	45000	ตอนนี้ลูกค้าส่วนใหญ่เข้ามาแล้วไม่เข้าใจว่า Product ทำอะไร
+45000	50000	ต้องคุยกับ Team ขายก่อน ถึงจะเริ่มใช้งานได้ ทำให้เสีย Conversion และเสียเวลา
+50000	53000	เราต้องการให้ Website อาทิบาย Product ได้เอง
+53000	55000	Business Go ลักของโปรเจกนี้คืออะไรคะ
+55000	60000	อยากเพิ่มจำนวนผู้สมัก เพิ่มการใช้งาน API และสร้างความหน้าเชื่อถือของ Product
+60000	62000	ร่วมถึงรถพร้าร้า Team Sales
+62000	65000	ถ้าไม่มี Landing Page นี้จะเกิดผลกระทบอะไรคะ
+66000	69000	ไม่เข้าใจ Value ของ Product และไม่เริ่มทดลองใช้งาน
+69000	71000	ต่อไปอยากถามเรื่องกลุ่มผู้ใช้งานค่ะ
+71000	73000	ผู้ใช้งานหลักคือใครคะ
+73000	75000	Developer และ AI Engineer เป็นกลุ่มหลัก
+75000	77000	ส่วนกลุ่มรองคือ Start Up Founder
+77000	81000	Product Manager และ UX Designer ที่อยากทดลอง AI
+81000	83000	Panpoint ของกลุ่มนี้คืออะไรคะ
+83000	85000	ต้องสมักหลาย Platform มี API หลายชุด
+85000	89000	เปรียบเที่ยบโมเดลยาก และ Documentation กระจัดกระจาย
+89000	91000	ผู้ใช้ข้าดหวังอะไรจาก Web ใส่นี้คะ
+91000	93000	เข้าใจ Product พายในไม่กี่วินาที
+93000	97000	ดูราคา เปรียบเที่ยบโมเดล และกดสมักได้ทั้งที
+97000	99000	ต่อไปอยากถามเรื่องป่าวหมายค่ะ
+99000	102000	ถ้าเปิดใช้งาน Landing Page แล้ว อะไรคือ success คะ
+102000	105000	Conversion Rate ส่าย Up เพิ่มขึ้น
+105000	109000	CTA ทุกกดมากขึ้น และผู้ใช้ใช้เวลาอยู่ใน Web สายนานขึ้น
+109000	111000	Wersion แรกจะมีสโคบอะไรบ้างคะ
+111000	121000	Hero Section, Feature Overview, AI Models, AI Agents Marketplace Preview, Pricing, Documentation, FAQ, Call-to-Action, and Footer
+121000	123000	แล้วอะไรที่ยังไม่ทำในริลีสนี้คะ
+123000	129000	Block, Community, Lashboard, Search Babeliet, User Lock-in, and Live Playground
+129000	131000	ต่อไปขอถาม Functional Requirements ค่ะ
+131000	133000	Landing Page ต้องทำอะไรได้บ้างคะ
+133000	143000	Hero พร้อมข้อความหลัก สดังรายการ AI Models สดัง Feature Cards สดัง Pricing สดัง FAQ สดัง CTA หลายตำแหน่ง และสดัง Preview ของ Dashboard
+143000	145000	CTA หลักคืออะไรคะ
+145000	148000	Get Started, Explore Models และ View Documentation
+148000	151000	ต้องมี Animation หรือ Interaction อะไรไหมคะ
+151000	157000	Miscroll Animation, Carthoffer, Number Counter, Gradient Background Animation, and Smooth Transition
+157000	159000	ต้องรองรับ Dark Mode ไหมคะ
+159000	161000	ใช่ครับ, Dark Mode เป็นค่า Default
+161000	162000	Business Rules มีอะไรบ้างคะ
+162000	164000	Pricing ต้องดึงจากระบบกลาง
+164000	166000	Documentation เปิดได้ โดยไม่ต้องหลอกอิน
+166000	168000	CTA ต้องไปหน้าสาย Up
+168000	170000	Hero ต้องสดัง AI Models ละสุด
+170000	173000	และ Features Models ต้องจัดเรียงจาก Popularity
+173000	174000	User Journey หลักเป็นอะไรคะ
+174000	175000	ผู้ชายเข้า Web สาย
+175000	177000	อาน Hero เล่นดู Features
+177000	178000	ดู AI Models
+178000	179000	ดู Pricing
+179000	180000	อาน FAQ
+180000	181000	กด Get Started
+181000	182000	และไปหน้าสาย Up
+182000	184000	ถ้าเกิด Error หรือการณีพิเศษ
+185000	186000	ระบบควรทำอย่างไรคะ
+186000	188000	ถ้าโลธ AI Models ไม่ได้ ให้ใช้ค้อมูล Cash
+188000	190000	ถ้า Pricing API ลม
+190000	191000	ให้แสดง Default Pricing
+191000	192000	ถ้ารูปไม่โลธ
+192000	193000	ให้ใช้ PlaySolder
+193000	195000	และถ้า Browser ไม่รองรับ Animation
+195000	196000	ให้แสดงแบบ Static
+196000	198000	มีค้อจำกัดอะไรบ้างคะ
+198000	199000	Responsive to Device
+199000	200000	SEO Friendly
+200000	201000	ใช้ Next.js
+201000	202000	Deploy Bonversale
+202000	204000	รองรับ Accessibility ระดับ AI
+204000	206000	และโลธหน้าแรกไม่เกิน 2 วินาที
+206000	207000	สุดท้าย
+207000	209000	มีเรื่องไหนที่ยังไม่ได้ค้อสรุปบ้างคะ
+209000	212000	ยังไม่ตัดสินใจจะใช้ Video Hero หรือ Illustration
+212000	215000	ยังไม่สรุปว่าจะมี AI Chat Assistant บนหน้า Web หรือไม่
+215000	216000	ยังไม่สรุปรู้ Bad Pricing
+216000	219000	และยังไม่ตัดสินใจจะเปิด AI Agent Marketplace
+219000	221000	ตั้งแต่ Version แรก หรือ Version ทัดไป
+221000	222000	ค่อสรุปนะคะ
+222000	225000	วันนี้เราได้ค้อมูลด้าน Business Goals, Users, Scope,
+225000	228000	Functional Requirements, Business Rules, User Flow,
+228000	232000	HKCs, Constraints, และ Success Metrics ครบโทรแล้ว
+232000	235000	ค่อนตอนทัดไปจะนำค้อมูลทั้งหมดไปจัดทำ PRD
+235000	238000	และแตกเป็น Epic, User Stories, UX Flow,
+238000	242000	WiFrame และให้ Fidelity Design เพื่อส่งต่อทีมพัฒนาค่ะ
+242000	245000	โอเคครับ เห็นด้วยตามนี้ สามารถดำเนินการต่อได้เลย
